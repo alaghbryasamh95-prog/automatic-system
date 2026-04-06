@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أبو غازي للخدمات</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #020617;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+nav a:hover { color: #22c55e; }
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+.hero h1 {
+    font-size: 42px;
+    color: #22c55e;
+}
+.hero button {
+    padding: 12px 25px;
+    background: #22c55e;
+    border: none;
+    cursor: pointer;
+}
+
+/* Services */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background: #1e293b;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+button.submit {
+    background: #22c55e;
+    padding: 10px 20px;
+    border: none;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>أبو غازي</h2>
+    <div>
+        <a href="#home">الرئيسية</a>
+        <a href="#services">الخدمات</a>
+        <a href="#contact">تواصل</a>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <h1>أهلاً بك 👋</h1>
+    <p>خدمات احترافية بسرعة وجودة عالية</p>
+    <button onclick="document.getElementById('contact').scrollIntoView()">تواصل معنا</button>
+</section>
+
+<section id="services" class="services">
+    <h2>خدماتنا</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>تصميم</h3>
+            <p>شعارات وصور احترافية</p>
+        </div>
+        <div class="card">
+            <h3>تسويق</h3>
+            <p>إدارة حسابات السوشيال</p>
+        </div>
+        <div class="card">
+            <h3>برمجة</h3>
+            <p>إنشاء مواقع إلكترونية</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>تواصل معنا</h2>
+    <input type="text" placeholder="اسمك">
+    <br>
+    <input type="email" placeholder="بريدك">
+    <br>
+    <textarea placeholder="رسالتك"></textarea>
+    <br>
+    <button class="submit" onclick="alert('تم إرسال الرسالة')">إرسال</button>
+</section>
+
+<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/967XXXXXXXXX" target="_blank">💬</a>
+
+<footer>
+    <p>© 2026 جميع الحقوق محفوظة - أبو غازي</p>
+</footer>
+
+</body>
+</html> 
+<button class="submit" onclick="sendEmail()">إرسال</button>
+
+<script>
+function sendEmail() {
+    window.location.href = "mailto:alaghbaryasamh95@gmail.com?subject=تواصل من الموقع&body=مرحبا";
+}
+</script>href="https://wa.me/967776608574"
