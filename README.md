@@ -42,7 +42,7 @@
 تم نشر الموقع باستخدام GitHub Pages
 يمكنك الوصول إليه عبر الرابط:
 
-https://username.github.io/abughazi-site
+https://whale.github.io/abughazi-site
 
 (قم باستبدال username باسم حسابك)
 
